@@ -1,44 +1,6 @@
 #!/bin/bash
-echo "Welcome Leonel, please sellect your starting class"
 
-echo "1- samurai"
-echo "2- prisoner"
-echo "3- Prophet"
-
-echo "Please enter class number from 1-3"
-
-read class
-
-if [[ $class==1 ]]; then
-
-                type="samurai"
-                hp=10
-                attack=20
-
-elif [[ $class==2 ]]; then
-                 type="prisoner"
-                 hp=20
-                 attack=4
-
-elif [[ $class==3 ]]; then
-
-                 type="prophet"
-                 hp =4
-                  attack=4
-                  else
-
-echo "invalid option"
-
- exit 2
-
-fi
-echo "you have choosen class $type ,your hp is $hp and your attack is $attack"
-
-# Prepare for your first battle
-
-#!/bin/bash
-
-echo "Welcome Leonel, please sellect your starting class"
+echo "Welcome Leonel, please select your starting class"
 
 echo "1- samurai"
 echo "2- prisoner"
@@ -69,7 +31,7 @@ else
 
 echo "invalid option"
 
- exit 2
+ exit 1
 
 fi
 echo "you have choosen class $type ,your hp is $hp and your attack is $attack"
@@ -87,7 +49,7 @@ if [[ $Beast == $leonel && 47 -gt 23 ]]; then
 
 else
     echo " You die"
-        exit 1
+        exit 2
 fi
 
 sleep 2
